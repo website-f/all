@@ -203,20 +203,21 @@ main {
 }
 .img-container {
   position: relative;
-  width: 410px;
-  height: 390px;
- 
+  width: 100%; /* Adjust width as needed */
+  max-width: 420px; /* Set maximum width */
   margin: 0 auto;
   margin-bottom: 2.7rem;
 }
-#person-img {
-  width: 420px;
-  display: block;
-  height: 420px;
-  object-fit: cover;
 
+#person-img {
+  width: 100%;
+  max-width: 100%; /* Set maximum width */
+  height: auto; /* Ensures aspect ratio is maintained */
+  display: block;
+  object-fit: cover;
   position: relative;
 }
+
 .img-container::after {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
